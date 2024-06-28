@@ -1,0 +1,24 @@
+<div class="menu-sidebar-content js-scrollbar1">
+    <nav class="navbar-sidebar">
+        <ul class="list-unstyled navbar-list">
+            <!-- <li>
+                <a routerLink="/category/1" routerLinkActive="active-link" style="text-decoration: none;">Runes</a>
+            </li>
+            <li>
+                <a routerLink="/category/2" routerLinkActive="active-link" style="text-decoration: none;">Alchemy</a>
+            </li>
+            <li>
+                <a routerLink="/category/3" routerLinkActive="active-link" style="text-decoration: none;">Spells</a>
+            </li>
+            <li>
+                <a routerLink="/category/4" routerLinkActive="active-link" style="text-decoration: none;">Swords</a>
+            </li>
+            <li>
+                <a routerLink="/category/5" routerLinkActive="active-link" style="text-decoration: none;">Explosives</a>
+            </li> -->
+            <li *ngFor="let tempProductCategory of productCategories">
+                <a routerLink="/category/{{tempProductCategory.id}}" style="text-decoration: none;">{{tempProductCategory.categoryName}}</a>
+            </li>
+        </ul>
+    </nav>
+</div>

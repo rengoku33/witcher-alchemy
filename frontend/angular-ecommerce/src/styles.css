@@ -107,11 +107,11 @@ a,a:hover{
 .page-wrapper{
     overflow:hidden;
     background:#e5e5e5;
-    padding-bottom:8vh
+    /* padding-bottom:8vh */
 }
 
 .page-container{
-    background-image: url('https://images.alphacoders.com/129/thumb-1920-1297895.jpg');
+    background-image: url('https://cdna.artstation.com/p/assets/images/images/008/185/192/large/stefan-s-skellige-29.jpg?1511032834');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -138,17 +138,17 @@ aside.menu-sidebar.d-none.d-lg-block.clr{
  */
 
 .header-desktop{
-    background:black;
+    background:transparent;
     -webkit-box-shadow:0 2px 5px 0 rgba(0,0,0,.1);
     -moz-box-shadow:0 2px 5px 0 rgba(0,0,0,.1);
     box-shadow:0 2px 5px 0 rgba(0,0,0,.1);
-    position:fixed;
-    top:0;
+    position:relative;
+    top:16px;
     right:0;
-    left:200px;
+    left:0;
     height:70px;
     z-index:3;
-    border-bottom: 1px solid white;
+    /* border-bottom: 1px solid white; */
 }
 
 .header-desktop .section-content{
@@ -224,15 +224,17 @@ section{
 
 input.au-input.au-input-xl{
     border-radius:40px!important;
-    margin-right:15px
+    margin-right:21px;
+    margin-left: 16%;
 }
 
 .au-input{
+    background-color: transparent;
     line-height:43px;
-    border:1px solid #e5e5e5;
-    font-size:14px;
-    color:#666;
-    padding:0 17px;
+    border:2.1px solid white;
+    font-size:16px;
+    color:white;
+    padding:0 21px;
     -webkit-border-radius:3px;
     -moz-border-radius:3px;
     border-radius:3px;
@@ -321,13 +323,17 @@ input.au-input.au-input-xl{
  */
 
 .menu-sidebar{
+    margin-left: 33px;
+    margin-top: 5%;
     width:200px;
     position:fixed;
     left:0;
     top:0;
     bottom:0;
     background: black;
-    overflow-y:auto;    
+    height: 63%;
+    /* overflow-y:auto; */
+    border: 1px solid white;    
 }
 
 .menu-sidebar::-webkit-scrollbar {
@@ -336,7 +342,7 @@ input.au-input.au-input-xl{
 .menu-sidebar .logo{
     margin-top: 33px;
     background: black;
-    height:90px;
+    height:210px;
     padding:0 21px;
     display:-webkit-box;
     display:-webkit-flex;
@@ -563,6 +569,16 @@ input.au-input.au-input-xl{
     padding-top:12px;
     margin-bottom:7px
 }
+.modH1{
+    color: white;
+    font-size:21px;
+    /* border-bottom:1px solid #ccc; */
+    padding-bottom:1px;
+    font-weight:600;
+    padding-top:12px;
+    margin-bottom:7px;
+    text-decoration: none;
+}
 .product-box h2{
     font-size:15px;
     padding-bottom:0;
@@ -733,6 +749,12 @@ table.table.table-bordered th{
 .detail-section{
     margin-top:60px
 }
+
+.detail-img{
+    width: 16%;
+    height: 50%;
+}
+
 /**/
 
 /* 
@@ -746,7 +768,7 @@ table.table.table-bordered th{
     background-color:#0da8e4!important;
     border-color:#0da8e4!important
 }
-a.primary-btn{
+.primary-btn{
     text-decoration: none;
     background:black;
     padding:7px 20px;
@@ -758,9 +780,8 @@ a.primary-btn{
     margin-top:5px;
     border-radius: 30px;
 }
-a.primary-btn:hover{
+.primary-btn:hover{
     background: darkgoldenrod;
-    color:#fff
 }
 
 .active-link {
