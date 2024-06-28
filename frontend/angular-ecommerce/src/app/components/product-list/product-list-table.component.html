@@ -1,24 +1,25 @@
 <table class="table">
     <thead class="thead-dark">
         <tr>
-            <th></th>
-            <th>Name</th>
-            <th>Coins</th>
-            <th>Units in Stock</th>
+             <th></th>
+             <th>Name</th>
+             <th>Coins</th>
+             <th>Units in Stock</th>
         </tr>
     </thead>
 
     <tbody>
         <tr *ngFor="let tempProduct of products">
-            <td>
+            <td class="align-middle">
                 <!-- <img src="{{ tempProduct.imageUrl }}" /> -->
                 <!-- {{tempProduct.imageUrl}} -->
-                <img src="{{tempProduct.imageUrl}}" alt="{{tempProduct.name}}"/> 
+                <img src="https://raw.githubusercontent.com/rengoku33/witcher-alchemy/main/frontend/angular-ecommerce/src/assets/images/products/placeholder.png"
+                height="50"/> 
 
             </td>
-            <td>{{tempProduct.name}}</td>
-            <td>{{tempProduct.unitPrice | currency:'PYG'}}</td>
-            <td>{{tempProduct.unitsInStock}}</td>
+            <td class="align-middle">{{tempProduct.name}}</td>
+            <td class="align-middle">{{tempProduct.unitPrice | currency:'PYG'}}</td>
+            <td class="align-middle">{{tempProduct.unitsInStock}}</td>
         </tr>
     </tbody>
 </table>
