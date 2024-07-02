@@ -1,7 +1,7 @@
 # Project Details:
 <ul>
   <li>Angular frontend with Bootstrap and TS</li>
-  <li>Spring boot backend with Spring Data JPA and Hibernate</li>
+  <li>Spring boot backend with Spring Data JPA, REST and Hibernate</li>
   <li>A relational DB using MySQL</li>
 </ul>
 <br>
